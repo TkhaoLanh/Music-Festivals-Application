@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Tickets</title>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/subStyle.css}"/>
+</head>
+<body>
+<h1>View Tickets</h1>
+<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Ticket Name</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Price</th>
+			<th>Gate</th>
+			<th>Seat</th>
+		</tr>
+		<tr th:each=" t : ${tickets}">
+			<td th:text="${t.id}"></td>
+			<td th:text="${t.name}"></td>
+			<td th:text="${t.dates}"></td>
+			<td th:text="${t.times}"></td>
+			<td th:text="${t.price}"></td>
+			<td th:text="${t.gate}"></td>
+			<td th:text="${t.seat}"></td>
+			<td><a th:href="@{/edit/{id}(id=${t.id})}">EDIT</a></td>
+			<td><a th:href="@{/delete/{id}(id=${t.id})}">DELETE</a></td>
+		</tr>		
+	</table>
+	<p><a href="/add">Add Ticket</a></p>
+	<p><a href="/">Back Home Page</a></p>
+</body>
+</html>

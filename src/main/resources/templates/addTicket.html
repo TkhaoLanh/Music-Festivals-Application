@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Ticket</title>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/subStyle.css}"/>
+</head>
+<body>
+<h1>Add Ticket</h1>
+<form th:action="@{/add}" method="post" th:object="${ticket}">
+<p>Name: <input type="text" th:field="*{name}" required="required"></p>
+<p>Date: <input type="date" th:field="*{dates}"></p>
+<p>Time: <input type="number" min="0" step="0.01" th:field="*{times}"></p>
+<p>Price: <input type="number" min="0" step="0.01" th:field="*{price}"></p>
+<p>Gate: <input type="number" min="0" th:field="*{gate}"></p>
+<p>Seat: <input type="number" min="0" th:field="*{seat}"></p>
+
+<p><input type="submit" value="Add Ticket"/></p>
+<p><a href="/">Back Home Page</a></p>
+</body>
+</html>

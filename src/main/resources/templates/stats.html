@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Stats Page</title>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/subStyle.css}"/>
+</head>
+<body>
+<h1>View statistics</h1>
+<ul style="list-style-type:circle">
+<li>Max price is $<span th:text="${max}"></span></li>
+<li>Min price is $<span th:text="${min}"></span></li>
+<li>Total festivals in the list is <span th:text="${total}"></span></li>
+<li>Average ticket price is $<span th:text="${avg}"></span></li>
+<li>Total amount of ticket price is $<span th:text="${sum}"></span></li>
+</ul>
+
+<p><a href="/">Back Home Page</a></p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+body {
+	    background-image: url("../images/music.jpg");
+	    background-size: cover;
+	    background-color: rgba(255,255,255, 0.3);  
+	    color: yellow;
+	}
+a{color: yellow;
+margin-left: 1%;}
+h1{padding-left: 35%;}
+p{padding-left: 35%;}
