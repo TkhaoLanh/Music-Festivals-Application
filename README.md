@@ -1,1 +1,1 @@
-"# Music-Festivals-Application-" 
+# Music-Festivals-Application
