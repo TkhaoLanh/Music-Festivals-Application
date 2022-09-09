@@ -12,7 +12,7 @@ This Web application supports festival management processes, building both front
 - Spring Boot
 - H2Database
 - Lombok
-### Server-side
+### Client-side
 - Css
 - Javascript
 ## Authors
